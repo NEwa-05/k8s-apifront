@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: apifront-v1
-        image: newa/apifront:1.9
+        image: newa/apifront:0.1
         imagePullPolicy: Always
         env:
           - name: API_URL
