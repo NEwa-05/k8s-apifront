@@ -1,0 +1,23 @@
+
+## Open ID connect
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: oidc-auth
+  namespace: apifront
+spec:
+  plugin:
+    oidcAuth:
+      source: oidcSource
+      scopes:
+        - openid
+      redirectUrl: "/cback"
+      session:
+        name: "%s-session"
+        path: "/"
+        secret: powpowpowpowpowpowpowpow
+        expiry: 86400
+      forwardHeaders:
+        X-Traefik-Group: groups
+        X-Traefik-User: username
