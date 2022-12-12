@@ -9,7 +9,7 @@ metadata:
 spec:
   plugin:
     oidcAuth:
-      source: oidcSource
+      source: frontSource
       scopes:
         - openid
       redirectUrl: "/cback"
