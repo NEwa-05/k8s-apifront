@@ -9,7 +9,7 @@ spec:
     - websecure
   routes:
     - kind: Rule
-      match: Host(`apifront.sabadellzurich.demo.traefiklabs.tech`)
+      match: Host(`apifront.telecomita.demo.traefiklabs.tech`)
       services:
         - name: apifront-v1
           port: 80
