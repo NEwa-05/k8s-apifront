@@ -20,7 +20,7 @@ spec:
         imagePullPolicy: Always
         env:
           - name: API_URL
-            value: "https://apiback.consw09.demo.traefiklabs.tech/newline"
+            value: "https://apiback.vetphaw09.demo.traefiklabs.tech/newline"
           - name: APP_PORT
             value: ":80"
 
