@@ -9,11 +9,11 @@ spec:
     - websecure
   routes:
     - kind: Rule
-      match: Host(`apifront.olgw12.demo.traefiklabs.tech`)
+      match: Host(`apifront.adentow13.demo.traefiklabs.tech`)
       services:
         - name: apifront-v1
           port: 80
       middlewares:
-        - name: oidc-auth
+      #  - name: oidc-auth
   tls:
     certResolver: default
