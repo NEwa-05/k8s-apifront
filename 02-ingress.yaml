@@ -14,6 +14,6 @@ spec:
         - name: apifront-v1
           port: 80
       middlewares:
-        - name: oidc-auth
+      #  - name: oidc-auth
   tls:
     certResolver: letsencrypt
